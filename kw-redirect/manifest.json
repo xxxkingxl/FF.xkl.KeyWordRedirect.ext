@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Keyword Redirect",
+  "version": "1.6",
+  "description": "Add ?_xkl-kw=%s to the end of a search engine/bookmark keyword URL (&_xkl-kw=%s is NOT supported). Example: https://site.com/page/?_xkl-kw=%s. Typed text is cut off, you land on the plain URL.",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png",
+		"128": "icon-128.png",
+		"256": "icon-256.png",
+		"512": "icon-512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": { "id": "kw-redirect@xxxkingxl.local" }
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": { "scripts": ["background.js"] }
+}
